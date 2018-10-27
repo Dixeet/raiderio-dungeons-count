@@ -2,6 +2,7 @@
 // @name     Dungeon count
 // @version  1
 // @grant    none
+// @author Rodrive
 // @include https://raider.io/characters/*
 // @require       http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js
 // ==/UserScript==
