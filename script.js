@@ -26,7 +26,7 @@
     ];
 
     var $container = $("<div style='width: 250px; background-color: #353535; position: fixed; top: 250px; left: 20px; color: #bbb; padding: 5px 5px'></div>");
-    var $infos = $("<div>Information</div>");
+    var $infos = $("<div>Informations</div>");
 
     init();
 
@@ -69,11 +69,11 @@
     function createView() {
         var total = 0;
         dungeons.forEach(function(dungeon){
-            $container.append("<div>" + dungeon.name + " : " + dungeon.count + "</div>");
+            $container.append("<div style='border-bottom: 1px solid #ffffff; padding: 3px 0'>" + dungeon.name + " : " + dungeon.count + "</div>");
             total += dungeon.count;
         })
         $infos.hide();
-        $container.prepend("<div><strong>" + "Total : " + total + " </strong></div>");
+        $container.prepend("<div style='border-bottom: 1px solid #ffffff; padding: 0 0 5px 0'><h3><strong>" + "Total : " + total + " </strong></h3></div>");
     }
 
 
